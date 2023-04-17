@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PatientsService } from './patients.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'csp-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'myApp';
+ public title = 'Caspar Health';
+
+  constructor(){}
 }
