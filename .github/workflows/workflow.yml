@@ -30,8 +30,15 @@ jobs:
     
     - name: Run tests
       run: echo 'testing'
-
+      
+    - name: Create build directory
+      run: mkdir build
+    
+    - name: Verify that files exist
+      run: ls -R ./build
+    
     - name: Upload production-ready build files
+      if: success()
       uses: actions/upload-artifact@v2
       with:
         name: production-files
