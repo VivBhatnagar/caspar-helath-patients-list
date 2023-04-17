@@ -1,7 +1,0 @@
-<div class="filter-container">
-    <!-- Filter for Age -->
-    <label for="filterByAge">{{filterCriteria}} :</label>
-    <select name="filterByAge" class="filter-drop-down" [ngModel]="selectedFilter" (ngModelChange)="selectedFilterChange($event)" class="form-ul" aria-label="Select for Filter Data By Age">
-        <option *ngFor="let filter of filtersArray" value="{{filter}}"> {{filter}} </option>
-    </select>
-</div>
