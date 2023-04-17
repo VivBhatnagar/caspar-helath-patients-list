@@ -29,7 +29,7 @@ jobs:
       run: npm run build
     
     - name: Run tests
-      run: echo 'testing'
+      run: echo 'test'
     
     - name: Verify that files exist
       run: ls -R ./dist
